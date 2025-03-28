@@ -6,11 +6,23 @@
 }
 
 /* Body and Typography */
+html, body {
+    height: 100%; /* Ensure full height of the page */
+    margin: 0;
+}
+
 body {
     font-family: Arial, sans-serif;
     background-color: #f8f9fa;
     color: #333;
-    line-height: 1.6;
+    line-height: 2.6;
+    display: flex;
+    flex-direction: column; /* Set the body to use flexbox */
+}
+
+/* Main content area will expand to take up available space */
+.main-content {
+    flex: 1; /* This ensures the content takes up remaining space */
 }
 
 /* Header & Navigation */
@@ -103,6 +115,7 @@ footer {
     text-align: center;
     padding: 15px;
     font-size: 0.9rem;
+    margin-top: auto;  /* Ensures footer sticks to the bottom */
 }
 
 /* Button Styles (Optional for CTAs) */
