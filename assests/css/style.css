@@ -1,0 +1,313 @@
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body and Typography */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f8f9fa;
+    color: #333;
+    line-height: 1.6;
+}
+
+/* Header & Navigation */
+header {
+    background-color: #3e3450;
+    color: white;
+    padding: 15px 5%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    font-size: 1.5rem;
+    font-weight: bold;
+    text-decoration: none;
+    color: white;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    margin: 0 15px;
+    font-size: 1rem;
+    transition: color 0.3s ease;
+}
+
+nav a:hover {
+    color: #ff8c00;
+}
+
+/* Hero Section */
+.hero {
+    text-align: center;
+    background-color: #e9e6f1;
+    padding: 50px 20px;
+}
+
+.hero h1 {
+    font-size: 2.5rem;
+    color: #3e3450;
+    margin-bottom: 10px;
+}
+
+.hero p {
+    font-size: 1.1rem;
+    color: #555;
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+/* Work Grid */
+.work-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 30px;
+    padding: 50px 5%;
+}
+
+.project {
+    background-color: white;
+    border: 1px solid #ddd;
+    border-radius: 12px;
+    overflow: hidden;
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+}
+
+.project:hover {
+    transform: translateY(-5px);
+}
+
+.project img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+.project h3 {
+    padding: 15px;
+    font-size: 1.25rem;
+    color: #3e3450;
+}
+
+/* Footer */
+footer {
+    background-color: #3e3450;
+    color: white;
+    text-align: center;
+    padding: 15px;
+    font-size: 0.9rem;
+}
+
+/* Button Styles (Optional for CTAs) */
+button, .btn {
+    background-color: #ff8c00;
+    color: white;
+    padding: 12px 20px;
+    border-radius: 25px;
+    border: none;
+    font-size: 1rem;
+    cursor: pointer;
+    text-decoration: none;
+    transition: background-color 0.3s ease;
+}
+
+button:hover, .btn:hover {
+    background-color: #e07b00;
+}
+
+/* About Section */
+.about-section {
+    background-color: #f8f9fa;
+    padding: 60px 5%;
+    display: flex;
+    justify-content: center;
+}
+
+.about-container {
+    display: grid;
+    grid-template-columns: 1fr 1.5fr;
+    gap: 40px;
+    max-width: 1000px;
+    align-items: center;
+}
+
+/* About Image */
+.about-image img {
+    width: 100%;
+    border-radius: 12px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* About Text */
+.about-text h2 {
+    font-size: 2rem;
+    color: #3e3450;
+    margin-bottom: 15px;
+}
+
+.about-text p {
+    font-size: 1.1rem;
+    color: #555;
+    margin-bottom: 20px;
+    line-height: 1.6;
+}
+
+/* Skills List */
+.skills-list {
+    list-style: none;
+    padding: 0;
+    margin: 20px 0;
+}
+
+.skills-list li {
+    background-color: #e9e6f1;
+    padding: 10px 15px;
+    border-radius: 8px;
+    margin-bottom: 10px;
+    font-size: 1rem;
+    color: #3e3450;
+}
+
+/* Button Styles */
+.btn {
+    display: inline-block;
+    background-color: #ff8c00;
+    color: white;
+    padding: 12px 20px;
+    border-radius: 25px;
+    text-decoration: none;
+    font-size: 1rem;
+    margin-top: 15px;
+    transition: background-color 0.3s ease;
+}
+
+.btn:hover {
+    background-color: #e07b00;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .about-container {
+        grid-template-columns: 1fr;
+        text-align: center;
+    }
+
+    .about-image {
+        margin-bottom: 20px;
+    }
+}
+
+/* Project Hero Section */
+.project-hero {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #e9e6f1;
+    padding: 40px 5%;
+    gap: 40px;
+}
+
+.project-hero img {
+    max-width: 50%;
+    border-radius: 12px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.hero-text {
+    max-width: 500px;
+    text-align: left;
+}
+
+.hero-text h1 {
+    font-size: 2.5rem;
+    color: #3e3450;
+    margin-bottom: 10px;
+}
+
+.hero-text p {
+    font-size: 1.2rem;
+    color: #555;
+    line-height: 1.6;
+}
+
+/* Case Study Section */
+.case-study {
+    background-color: #f8f9fa;
+    padding: 60px 5%;
+    display: flex;
+    justify-content: center;
+}
+
+.case-content {
+    max-width: 900px;
+    background-color: white;
+    padding: 40px;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+/* Case Study Headings */
+.case-content h2,
+.case-content h3 {
+    color: #3e3450;
+    margin-top: 20px;
+}
+
+.case-content p {
+    font-size: 1.1rem;
+    color: #555;
+    margin-bottom: 20px;
+    line-height: 1.6;
+}
+
+/* Case Study List */
+.case-content ul {
+    list-style-type: disc;
+    margin-left: 20px;
+    margin-bottom: 20px;
+}
+
+.case-content li {
+    margin-bottom: 10px;
+}
+
+/* Button Style */
+.btn {
+    display: inline-block;
+    background-color: #ff8c00;
+    color: white;
+    padding: 12px 20px;
+    border-radius: 25px;
+    text-decoration: none;
+    font-size: 1rem;
+    margin-top: 15px;
+    transition: background-color 0.3s ease;
+}
+
+.btn:hover {
+    background-color: #e07b00;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .project-hero {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .project-hero img {
+        max-width: 90%;
+        margin-bottom: 20px;
+    }
+
+    .hero-text {
+        text-align: center;
+    }
+}
