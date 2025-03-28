@@ -188,23 +188,6 @@ button:hover, .btn:hover {
     color: #3e3450;
 }
 
-/* Button Styles */
-.btn {
-    display: inline-block;
-    background-color: #ff8c00;
-    color: white;
-    padding: 12px 20px;
-    border-radius: 25px;
-    text-decoration: none;
-    font-size: 1rem;
-    margin-top: 15px;
-    transition: background-color 0.3s ease;
-}
-
-.btn:hover {
-    background-color: #e07b00;
-}
-
 /* Responsive Design */
 @media (max-width: 768px) {
     .about-container {
