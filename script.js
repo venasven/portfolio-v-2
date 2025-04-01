@@ -5,15 +5,15 @@ document.addEventListener('DOMContentLoaded', function() {
 
     imageLinks.forEach(link => {
         link.addEventListener('click', function(e) {
-            e.preventDefault(); // Prevent default link behavior
-            const fullsizeImage = link.getAttribute('data-fullsize'); // Get the full-size image path
-            lightboxImg.src = fullsizeImage; // Set the full-size image in the lightbox
-            lightbox.style.display = 'flex'; // Show the lightbox
+            e.preventDefault(); 
+            const fullsizeImage = link.getAttribute('data-fullsize'); 
+            lightboxImg.src = fullsizeImage; 
+            lightbox.style.display = 'flex'; 
         });
     });
 
-    // Close the lightbox when clicking the close button
+   
     document.querySelector('.close-btn').addEventListener('click', function() {
-        lightbox.style.display = 'none'; // Hide the lightbox
+        lightbox.style.display = 'none'; 
     });
 });
